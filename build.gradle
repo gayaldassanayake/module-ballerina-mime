@@ -136,7 +136,7 @@ task codeCoverageReport(type: JacocoReport) {
         html.destination = new File("${buildDir}/reports/jacoco/report.html")
     }
 
-    onlyIf = {
+    onlyIf = { 
         true
     }
 }
