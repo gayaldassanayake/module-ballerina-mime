@@ -36,6 +36,7 @@ jobs:
             path: mime-ballerina/target/report/test_results.json
             if-no-files-found: ignore
       - name: Generate Codecov Report
+        if: github.action==pull_request
         uses: codecov/codecov-action@v1
         
   windows-build:
